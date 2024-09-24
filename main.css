@@ -1,0 +1,35 @@
+:root {
+    --accent: #e15f41;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: var(--accent);
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: var(--accent);
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: Pacifico, cursive;
+
+    &::selection {
+        background-color: #fff;
+        color: var(--accent);
+    }
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
