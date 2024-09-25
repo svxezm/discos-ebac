@@ -12,16 +12,16 @@
         <link rel="stylesheet" href="./main.css" type="text/css">
     </head>
     <body>
-        <header class="navbar navbar-expand-lg sticky-top p-4">
+        <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
             <div class="container">
-                <h1 class="navbar-brand m-0">Nome do restaurante</h1>
+                <h1 class="section-title navbar-brand m-0">Nome do restaurante</h1>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
                     <ul class="nav nav-pills d-block d-md-flex mt-3 mt-md-0">
                         <li class="nav-item fw-bold">
-                            <a class="nav-link active" href="#sobre">
+                            <a class="nav-link" href="#sobre">
                                 <i class="bi bi-house-door me-1"></i>
                                 Sobre
                             </a>
@@ -48,6 +48,61 @@
                 </nav>
             </div>
         </header>
+        <main>
+            <div data-bs-spy="scroll" data-bs-target="cabecalho">
+                <section id="sobre">
+                    <div id="restaurant-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/slides/slide1.png" alt="Ambiente interno do restaurante.">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/slides/slide2.png" alt="Duas taças de vinho">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/slides/slide3.png" alt="Uma mesa cheia com nosso cardápio">
+                            </div>
+                            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#restaurant-carousel">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#restaurant-carousel">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" class="active" data-bs-target="#restaurant-carousel" data-bs-slide-to="0"></button>
+                                <button type="button" data-bs-target="#restaurant-carousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#restaurant-carousel" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-5 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img class="d-block w-100 rounded" src="images/restaurante.jpg" alt="Espaço interno do restaurante" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                                    <p>
+                                    Nosso restaurante conta com uma variedade de opções para satisfazer seu apetite.
+                                    </p>
+                                    <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                                    <p>
+                                    O interior do nosso restaurante possui decorações em madeira e tijolos com iluminação em cores quentes para um clima mais amigável.
+                                    </p>
+                                    <ul>
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="./main.js"></script>
