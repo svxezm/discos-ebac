@@ -1,5 +1,6 @@
 :root {
     --accent: #e15f41;
+    --background: #ffeae6;
 }
 
 body {
@@ -21,15 +22,23 @@ body {
     color: #fff;
 }
 
-.navbar-brand {
+.navbar-brand::selection {
+    background-color: #fff;
+    color: var(--accent);
+}
+
+.navbar-toggler {
+    background-color: var(--background);
+}
+
+.section-title {
     font-family: Pacifico, cursive;
 
-    &::selection {
-        background-color: #fff;
+    & span {
         color: var(--accent);
     }
 }
 
-.navbar-toggler {
-    background-color: #ffeae6;
+#sobre {
+    background-color: var(--background);
 }
