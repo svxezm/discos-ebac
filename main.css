@@ -3,6 +3,10 @@
     --background: #ffeae6;
 }
 
+.text-colored {
+    color: var(--accent);
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -33,10 +37,6 @@ body {
 
 .section-title {
     font-family: Pacifico, cursive;
-
-    & span {
-        color: var(--accent);
-    }
 }
 
 #sobre {
