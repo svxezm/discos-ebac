@@ -15,14 +15,15 @@ body {
     background-color: var(--accent);
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background-color: #fff;
     color: var(--accent);
 }
 
-.nav-link,
+#cabecalho .nav-link,
 .navbar-brand,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
     color: #fff;
 }
 
@@ -39,6 +40,16 @@ body {
     font-family: Pacifico, cursive;
 }
 
-#sobre {
+#sobre,
+#cardapio {
     background-color: var(--background);
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: var(--accent);
 }
