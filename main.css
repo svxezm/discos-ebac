@@ -45,11 +45,26 @@ body {
     background-color: var(--background);
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#fale-conosco button  {
     background-color: var(--accent);
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
     color: var(--accent);
+}
+
+li {
+    list-style: none;
+}
+
+.social-links {
+    & li {
+        display: inline;
+    }
+
+    & a {
+        text-decoration: none;
+    }
 }
